@@ -274,7 +274,7 @@ body {
                 .text-block__line {
                     width: inherit;
                     height: inherit;
-                    background: url(../img/first-line.svg) center no-repeat;
+                    background: url(../img/first-line.png) center no-repeat;
                     background-size: contain;
                 }
 
@@ -295,7 +295,7 @@ body {
                 .text-block__line {
                     width: inherit;
                     height: inherit;
-                    background: url(../img/up-second-line.svg) center no-repeat;
+                    background: url(../img/up-second-line.png) center no-repeat;
                     background-size: contain;
                 }
 
@@ -316,7 +316,7 @@ body {
                 .text-block__line {
                     width: inherit;
                     height: inherit;
-                    background: url(../img/third-line.svg) center no-repeat;
+                    background: url(../img/third-line.png) center no-repeat;
                     background-size: contain;
                 }
 
@@ -394,13 +394,16 @@ body {
 
 .hypervenom {
     position: relative;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 130vh;
 
     .overlay-up {
         position: absolute;
         background: url(../img/hypervenom-overlay-up.png) no-repeat top;
         width: 100%;
-        height: 100%;
+        height: 60%;
         top: 0%;
         background-size: contain;
     }
@@ -452,6 +455,32 @@ body {
                 color: #263238;
             }
 
+            .raiting {
+                display: grid;
+                grid-template-areas:
+                    'star-wrap star-wrap star-wrap .'
+                    '. . review review';
+                grid-template-columns: 50px 50px 50px 55px;
+                grid-template-rows: 35px 35px;
+                grid-row-gap: 5px;
+                align-items: center;
+                color: #00ecf4;
+
+                .star-wrapper {
+
+                    grid-area: star-wrap;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .2);
+                    height: 35px;
+                }
+
+                .review {
+                    grid-area: review;
+                    text-align: right;
+                }
+            }
         }
     }
 }

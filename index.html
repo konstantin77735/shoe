@@ -3,6 +3,7 @@
 
 <head>
     <link rel='stylesheet' href='css/style.css'>
+    <script src='js/script.js'></script>
     <meta charset='UTF-8'>
     <title>Shoe</title>
 </head>
@@ -30,9 +31,9 @@
                     </div>
                 </div>
                 <div class='img-block'>
-                    <img class='lightning' src="img/lightning.png" alt="lightnig">
-                    <img class='shoe' src="img/shoe.png" alt="shoe">
-                    <img class='shoe__shadow' src="img/shoeShadow.png" alt="shadow">
+                    <img class='lightning' src="img/lightning.png" alt="lightnig" style='transition: all .3s linear'>
+                    <img class='shoe' src="img/shoe.png" alt="shoe" style='z-index: 9'>
+                    <img class='shoe__shadow' src="img/shoeShadow.png" alt="shadow" style='transition: all .3s linear'>
                 </div>
             </div>
         </div>
@@ -90,11 +91,13 @@
                     </div>
                 </div>
                 <div class="raiting">
-                  <img height='10' src="img/full-star.png" alt="star">
-                  <img height='10' src="img/full-star.png" alt="star">
-                  <img height='10' src="img/full-star.png" alt="star">
-                  <img height='10' src="img/half-star.png" alt="star">
-                  <img height='10' src="img/empty-star.png" alt="star">
+                    <div class="star-wrapper">
+                        <img height="20" src="img/full-star.png" alt="star">
+                        <img height="20" src="img/full-star.png" alt="star">
+                        <img height="20" src="img/full-star.png" alt="star">
+                        <img height="20" src="img/half-star.png" alt="star">
+                        <img height="20" src="img/empty-star.png" alt="star">
+                    </div>
                     <span class="review">3550 Review</span>
                 </div>
             </div>
@@ -119,9 +122,9 @@
                 <a href='#'>About Us</a></div>
             <div class="social-links">
                 <a href="#"><img src="img/social/facebook.svg" alt="facebook" class="social-link f"></a>
-               <a href="#"> <img src="img/social/twitter.svg" alt="twitter" class="social-link tw"></a>
+                <a href="#"> <img src="img/social/twitter.svg" alt="twitter" class="social-link tw"></a>
                 <a href="#"><img src="img/social/skype.svg" alt="skype" class="social-link skp"></a>
-             <a href="#">   <img src="img/social/vk.svg" alt="vk" class="social-link vk"></a>
+                <a href="#"> <img src="img/social/vk.svg" alt="vk" class="social-link vk"></a>
             </div>
         </div>
 
